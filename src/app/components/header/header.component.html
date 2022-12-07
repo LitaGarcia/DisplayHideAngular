@@ -1,5 +1,7 @@
 <header class="header">
-  <h1 class="header__title">My Personal Page</h1>
+  <h1 class="header__title" [class.titleChanged]="getClassMode">
+    Manuela García
+  </h1>
   <nav>
     <ul class="header__nav">
       <li>About me</li>
@@ -7,5 +9,4 @@
       <li>Technologies</li>
     </ul>
   </nav>
-  <app-toggle class="header"></app-toggle>
 </header>

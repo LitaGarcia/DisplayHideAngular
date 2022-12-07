@@ -3,12 +3,23 @@ import { CommonModule } from '@angular/common';
 import { BodyComponent } from './body/body.component';
 
 import { HeaderComponent } from './header/header.component';
-import { ToggleComponent } from './toggle/toggle.component';
+import { HideDisplayComponent } from './hideDisplay/hideDisplay.component';
 import { FormsModule } from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [HeaderComponent, BodyComponent, ToggleComponent],
-  exports: [HeaderComponent, BodyComponent],
+  declarations: [
+    HeaderComponent,
+    BodyComponent,
+    HideDisplayComponent,
+    FooterComponent,
+  ],
+  exports: [
+    HeaderComponent,
+    BodyComponent,
+    FooterComponent,
+    HideDisplayComponent,
+  ],
   imports: [CommonModule, FormsModule],
 })
 export class ComponentsModule {}

@@ -1,0 +1,13 @@
+<p>Click Below if you want to Change colours and see an hiden element!</p>
+<label class="label hideDisplay">
+  <input
+    type="checkbox"
+    class="hideDisplay_input"
+    [(ngModel)]="classMode"
+    (click)="showHideComponent()"
+    (click)="generateClassMode()"
+  />
+  <div class="hideDisplay-control"></div>
+  <p>{{ classMode }}</p>
+  <h4 *ngIf="classMode" class="hidenText">{{ hideElement }}</h4>
+</label>

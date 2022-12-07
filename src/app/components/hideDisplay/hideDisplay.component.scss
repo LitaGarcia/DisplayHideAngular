@@ -6,9 +6,12 @@ $height: $width/2;
 .test {
   background-color: #4cd964;
 }
-.toggle{
+.test2 {
+  background-color: #8E8E93;
+}
+.hideDisplay{
 
-   .toggle-control{
+   .hideDisplay-control{
      transition: $transition;
       width: $width;
       height: $height;
@@ -34,7 +37,7 @@ $height: $width/2;
    
   input{
     display: none;
-    &:checked + .toggle-control{
+    &:checked + .hideDisplay-control{
       border-color: $color_checkbox_success;
       background-color: $color_checkbox_success;
       &:after{
