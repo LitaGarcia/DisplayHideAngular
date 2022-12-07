@@ -8,16 +8,12 @@ import { ComponentsService } from '../services/components.service';
 })
 export class HideDisplayComponent {
   public classMode: boolean = false;
-  public hideElement: string = '';
+  public hideElement: string = "Hello I'm Manuela :)";
   constructor(private componentsService: ComponentsService) {}
   public generateClassMode() {
     this.componentsService.generateClassMode();
   }
   public showHideComponent() {
-    if (!this.classMode) {
-      this.hideElement = 'hi!:)';
-    } else {
-      this.hideElement = '';
-    }
+    this.hideElement = this.hideElement!;
   }
 }
